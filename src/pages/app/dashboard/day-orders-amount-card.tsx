@@ -1,5 +1,4 @@
 import { useQuery } from '@tanstack/react-query'
-import { da } from 'date-fns/locale'
 import { Utensils } from 'lucide-react'
 
 import { getDayOrdersAmount } from '@/api/get-day-orders-amount'
