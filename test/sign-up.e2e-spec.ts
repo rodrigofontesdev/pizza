@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-test('sign up sucessfully', async ({ page }) => {
+test('sign up successfully', async ({ page }) => {
   await page.goto('/sign-up', { waitUntil: 'networkidle' })
 
   await page.getByLabel('Nome do estabelecimento').fill('Pizza Shop')
