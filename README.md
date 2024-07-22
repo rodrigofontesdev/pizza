@@ -1,19 +1,39 @@
-![pizzashop-preview](https://github.com/user-attachments/assets/e61621f9-1e94-4214-bd58-c3a57f0bb8f3)
+![cover](https://github.com/user-attachments/assets/d6b16526-c4d6-4f36-ae40-46e2c9aa34d1)
 
-# Pizza.shop
+# Pizza Shop
 
-> [!IMPORTANT]
-> TODO
+A restaurant dashboard to track metrics such as revenue by period, daily and monthly orders, best-selling products, manage orders, and much more.
+
+The purpose of this project is to develop an application without using any framework, relying solely on React to integrate our front end with a back end via REST API.
 
 # Prerequisites
 
-> [!IMPORTANT]
-> TODO
+- Bun
+- Node.js
+- Docker
+- PostgreSQL
+- Git
 
 # Getting Started
 
-> [!IMPORTANT]
-> TODO
+### Back-end
+
+- Clone the repository (`git clone git@github.com:rodrigofontesdev/pizza-api.git`)
+- Install dependencies (`bun install`)
+- Copy .env.local.example file (`cp .env.local.example .env.local`)
+- Update Resend Key on .env.local file (from `RESEND_API_KEY=""` to `RESEND_API_KEY="."`), it should work!
+- Run containers (`docker compose up -d`)
+- Install migrations (`bun migrate`)
+- Open the seed file (`/src/db/seed.ts`) and update the restaurant manager email to your own email
+- Populate the database (`bun seed`)
+- Run application (`bun dev`)
+
+### Front-end
+
+- Clone the repository (`git clone git@github.com:rodrigofontesdev/pizza.git`)
+- Install dependencies (`npm install`)
+- Copy .env.example file (`cp .env.example .env`)
+- Run application (`npm run dev`)
 
 # Features
 
