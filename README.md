@@ -21,7 +21,7 @@ The purpose of this project is to develop an application without using any frame
 - Clone the repository (`git clone git@github.com:rodrigofontesdev/pizza-api.git`)
 - Install dependencies (`bun install`)
 - Copy .env.local.example file (`cp .env.local.example .env.local`)
-- Update Resend Key on .env.local file (from `RESEND_API_KEY=""` to `RESEND_API_KEY="."`), it should work!
+- Update [Resend](https://resend.com) key on .env.local file (from `RESEND_API_KEY=""` to `RESEND_API_KEY="."`), it should work
 - Run containers (`docker compose up -d`)
 - Install migrations (`bun migrate`)
 - Open the seed file (`/src/db/seed.ts`) and update the restaurant manager email to your own email
@@ -36,6 +36,23 @@ The purpose of this project is to develop an application without using any frame
 - Run application (`npm run dev`)
 
 # Features
+
+- Create an account as restaurant manager
+- Passwordless login with magic link
+- Logout from account
+- Update restaurant profile
+- Toggle between dark and light theme
+- Revenue by period
+- Best-selling products
+- Daily and monthly orders
+- Monthly canceled orders
+- Filter orders by ID, customer name or status
+- Remove order filters
+- Open order in details
+- Manage order status
+- Paginate between the orders
+
+# How to Use
 
 > [!IMPORTANT]
 > TODO
