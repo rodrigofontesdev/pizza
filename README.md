@@ -4,9 +4,9 @@
 
 A restaurant dashboard to track metrics such as revenue by period, daily and monthly orders, best-selling products, manage orders, and much more.
 
-The purpose of this project is to develop an application without using any framework, relying solely on React to integrate our front end with a back end via REST API.
+The purpose of this project is to develop an application without using any framework, relying solely on React to integrate our front-end with a back-end via REST API.
 
-# Prerequisites
+## Prerequisites
 
 - Bun
 - Node.js
@@ -14,7 +14,7 @@ The purpose of this project is to develop an application without using any frame
 - PostgreSQL
 - Git
 
-# Getting Started
+## Getting Started
 
 ### Back-end
 
@@ -35,7 +35,7 @@ The purpose of this project is to develop an application without using any frame
 - Copy .env.example file (`cp .env.example .env`)
 - Run application (`npm run dev`)
 
-# Features
+## Features
 
 - Create an account as restaurant manager
 - Passwordless login with magic link
@@ -50,23 +50,48 @@ The purpose of this project is to develop an application without using any frame
 - Remove order filters
 - Open order in details
 - Manage order status
-- Paginate between the orders
+- Paginate between orders
 
-# How to Use
+## How to Use
+
+### Create an account
+
+Visit the `/sign-up` route, you must be able to create an account as a restaurant manager and sign in normally on the app. However, your dashboard will remain empty.
+
+### Sign-in with magic link
+
+Visit the `/sign-in` route, fill in the email address that you updated in the seed file. For now, transactional email sending is still disabled, but you can obtain the magic link in the back-end console. Open the link in your browser, and you will be automatically redirected to the dashboard.
+
+> [!NOTE]
+> See how to run the back-end server on the [Getting Started section](#getting-started) on this document.
+> 
+> I plan to activate transactional email sending using a tool other than Resend service.
+
+### Manage orders
+
+Visit the `/orders` route, filter orders by status or other criteria, click on the left-side icon to see the order details or click the right-side action buttons to manage the statuses.
+
+## I've Learned
 
 > [!IMPORTANT]
 > TODO
 
-# I've Learned
+## Built With
 
-> [!IMPORTANT]
-> TODO
+- React
+- TypeScript
+- shadcn/ui
+- Tailwind CSS
+- React Query
+- Playwright
+- Vitest
+- Testing Library
+- Mock Service Worker
 
-# Built With
+## Credits
 
-> [!IMPORTANT]
-> TODO
+Special thanks to [@rocketseat-education](https://github.com/rocketseat-education) for contributing to the back-end. See the original [Pizza Shop API](https://github.com/rocketseat-education/pizzashop-api).
 
-# License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
