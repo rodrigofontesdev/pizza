@@ -85,6 +85,18 @@ To run end-to-end tests, first start the app in test mode by running `npm run de
 > [!NOTE]
 > Inside `/src/api/mocks` you can find the mocks for the API. And inside `/test` are located the end-to-end tests.
 
+**Environment Variables**
+
+| Key  | Value | .ENV  | Description |
+| :------------ | :------------ | :------------ | :------------ |
+| VITE_API_URL | "string" (default: `http://localhost:3333`) |  | Indicates the URL from the API, in test mode should be `"/"`  |
+| VITE_ENABLE_API_DELAY | `true` \| `false` |  | Enable or disable delay in the API, useful for simulating a non-local connection |
+| API_BASE_URL | "string" (default: `http://localhost:3333`) | API | Indicates the base URL for the API |
+| AUTH_REDIRECT_URL | "string" (default: `http://localhost:5173`) | API | Indicates the URL from the front-end application |
+| DB_URL | "string" (default: `docker container`) | API | URL for connection with the database, can be any Postgres service from your machine |
+| JWT_SECRET_KEY |  | API | A strong, randomly generated secret key is required for JSON Web Token security |
+| RESEND_API_KEY | "string" | API | `deprecated` |
+
 ## I've Learned
 
 - Create pre-styled components with shadcn/ui
