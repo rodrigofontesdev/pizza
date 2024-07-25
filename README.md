@@ -23,6 +23,7 @@ The goal is to develop an application without using any framework, relying solel
 - Copy .env.local.example file (`cp .env.local.example .env.local`)
 - Update [Resend](https://resend.com) key on .env.local file (from `RESEND_API_KEY=""` to `RESEND_API_KEY="."`), it should work
 - Run containers (`docker compose up -d`)
+- Check if container is running (`docker ps`)
 - Install migrations (`bun migrate`)
 - Open the seed file (`/src/db/seed.ts`) and update the restaurant manager email to your own email
 - Populate the database (`bun seed`)
