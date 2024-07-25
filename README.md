@@ -94,7 +94,7 @@ To run end-to-end tests, first start the app in test mode by running `npm run de
 | API_BASE_URL | "string" (default: `http://localhost:3333`) | API | Indicates the base URL for the API |
 | AUTH_REDIRECT_URL | "string" (default: `http://localhost:5173`) | API | Indicates the URL from the front-end application |
 | DB_URL | "string" (default: `docker container`) | API | URL for connection with the database, can be any Postgres service from your machine |
-| JWT_SECRET_KEY |  | API | A strong, randomly generated secret key is required for JSON Web Token security |
+| JWT_SECRET_KEY | "string" | API | A strong, randomly generated secret key is required for JSON Web Token security |
 | RESEND_API_KEY | "string" | API | `deprecated` |
 
 ## I've Learned
