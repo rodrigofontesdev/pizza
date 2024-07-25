@@ -2,9 +2,9 @@
 
 # Pizza Shop
 
-A restaurant dashboard to track metrics such as revenue by period, daily and monthly orders, best-selling products, manage orders, and much more.
+A restaurant dashboard to track key metrics such as revenue by period, customer retention, daily and monthly orders, best-selling products, manage orders, and more.
 
-The purpose of this project is to develop an application without using any framework, relying solely on React to integrate our front-end with a back-end via REST API.
+The goal is to develop an application without using any framework, relying solely on React to integrate the front-end with a back-end via REST API.
 
 ## Prerequisites
 
@@ -70,6 +70,20 @@ Visit the `/sign-in` route, fill in the email address that you updated in the se
 ### Manage orders
 
 Visit the `/orders` route, filter orders by status or other criteria, click on the left-side icon to see the order details or click the right-side action buttons to manage the statuses.
+
+## How to Test
+
+In this application unit tests are built with [Vitest](https://github.com/vitest-dev/vitest), [Testing Library](https://github.com/testing-library/react-testing-library) and [Happy Dom](https://github.com/capricorn86/happy-dom). On the other hand, E2E tests are built with [Playwright](https://github.com/microsoft/playwright) and [Mock Service Worker](https://github.com/mswjs/msw).
+
+To run the unit tests, open the front-end console and type: `npm run test`
+
+> [!NOTE]
+> Inside the tested components you can find a file with `.spec.tsx` extension, these files are located closest as possible to the target component.
+
+To run end-to-end tests, first start the app in test mode by running `npm run dev:test` in the console. Once the app is mocked, open a new terminal and run `npx playwright test` for CI execution or `npx playwright test --ui` for the Playwright interface.
+
+> [!NOTE]
+> Inside `/src/api/mocks` you can find the mocks for the API. And inside `/test` are located the end-to-end tests.
 
 ## I've Learned
 
