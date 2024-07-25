@@ -63,7 +63,7 @@ Visit the `/sign-up` route, you must be able to create an account as a restauran
 Visit the `/sign-in` route, fill in the email address that you updated in the seed file. For now, transactional email sending is still disabled, but you can obtain the magic link in the back-end console. Open the link in your browser, and you will be automatically redirected to the dashboard.
 
 > [!NOTE]
-> See how to run the back-end server on the [Getting Started section](#getting-started) on this document.
+> See how to run the API server on the [Getting Started section](#getting-started) on this document.
 > 
 > I plan to activate transactional email sending using a tool other than Resend service.
 
@@ -87,8 +87,15 @@ To run end-to-end tests, first start the app in test mode by running `npm run de
 
 ## I've Learned
 
-> [!IMPORTANT]
-> TODO
+- Create pre-styled components with shadcn/ui
+- Provide SEO metatags with React Helmet Async
+- Create a theme toggle with dark and light mode (`Context API`)
+- Fetch, cache, synchronize and update server state with TanStack Query (also know as React Query)
+- Differences between local state, global state and HTTP state (server state)
+- Authentication with JWT Cookie approach
+- How and when to use optimistic interface to improve user experience
+- Create unit and end-to-end tests for the front-end
+- How and why to mock an API service
 
 ## Built With
 
@@ -96,7 +103,7 @@ To run end-to-end tests, first start the app in test mode by running `npm run de
 - TypeScript
 - shadcn/ui
 - Tailwind CSS
-- React Query
+- TanStack Query (React Query)
 - Playwright
 - Vitest
 - Testing Library
